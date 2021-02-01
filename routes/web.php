@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/list',  'App\Http\Controllers\PokedexController@listAll');
+Route::get('/get-detail/{id}',  'App\Http\Controllers\PokedexController@getDetail');
